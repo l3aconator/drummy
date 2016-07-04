@@ -1,13 +1,27 @@
-//Import Base
+//Import Normalize
 @import "base/normalize";
 
-//Import Components
-@import "components/buttons";
-@import "components/main-nav";
+//Import Helpers
+@import "helpers/color-variables";
+@import "helpers/typography-variables";
+@import "helpers/ui-variables";
+@import "helpers/media-query-variables";
+@import "helpers/mixins";
+
+//Import Typicons
+@import "base/typicons";
+
+//Import Typography
+@import "base/typography";
 
 //Import Layout
 @import "layout/grid";
 @import "layout/header";
+@import "layout/sections";
+@import "layout/floating-footer";
 @import "layout/footer";
 
-//Import Pages
+//Import Components
+@import "components/main-nav";
+@import "components/buttons";
+@import "components/tooltips";

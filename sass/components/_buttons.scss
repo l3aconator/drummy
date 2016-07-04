@@ -1,0 +1,81 @@
+//Main buttons
+
+button,
+.button {
+  a {
+    color: $white;
+    text-decoration: none;
+    display: block;
+    min-width: 100%;
+    padding: 10px 20px;
+  }
+  
+  margin-top: 20px;
+  border-radius: $base-border-radius;
+  border: 0;
+  font-family: $base-font-family;
+  font-weight: $heading-font-weight;
+  background-color: $dark-blue;
+  letter-spacing: .075em;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  
+  @include default-button-transition;
+
+  &:hover,
+  &:active {
+    background-color: darken($dark-blue, 10%);
+  }
+
+  &.secondary {
+    background-color: $light-blue;
+    &:hover,
+    &:active {
+      background-color: darken($light-blue, 10%);
+    }
+  }
+
+  &.success {
+    background-color: $green;
+    &:hover,
+    &:active {
+      background-color: darken($green, 10%);
+    }
+  }
+
+  &.warning {
+    background-color: $orange;
+    &:hover,
+    &:active {
+      background-color: darken($orange, 10%);
+    }
+  }
+
+  &.danger {
+    background-color: $red;
+    &:hover,
+    &:active {
+      background-color: darken($red, 10%);
+    }
+  }
+
+  &.shadow {
+    @include default-box-shadow;
+
+    &:hover,
+    &:active {
+      box-shadow: none;
+    }
+  }
+  
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  &.inline {
+    display: inline;
+  }
+}

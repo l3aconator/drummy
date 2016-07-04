@@ -1,0 +1,59 @@
+@mixin default-button-transition {
+  transition: all 200ms ease-in;
+}
+
+@mixin default-box-shadow {
+  box-shadow: 0px 4px 9px 0px rgba(60,65,73,0.49);
+}
+
+@mixin reverse-box-shadow {
+  box-shadow: 0px -4px 9px 0px rgba(60,65,73,0.49);
+}
+
+//Mixins for instrument boxes
+@mixin base-instrument-box($color) {
+  width: 76px;
+  height: $base-box-height;
+  background-color: $color;
+  border-radius: $base-border-radius;
+}
+
+@mixin instrument-controls($color) {
+  .instrument-controls {
+      
+      &.js-active {
+        .instrument-on {
+          color: $white;
+        }
+        .instrument-off {
+          background-color: darken($color, 20%);
+          color: $color;
+        }
+      }
+      
+      &.js-not-active {
+        .instrument-on {
+          background-color: darken($color, 20%);
+          color: $color;  
+        }
+        .instrument-off {
+          background-color: $red !important;
+          color: $white;
+        }
+      }
+      
+    }
+}
+
+@mixin beat-box($color) {
+  .pattern-row {
+    
+    .beat-box {
+      background-color: $color;
+    }
+
+    .waveform-box {
+      background-color: darken($color, 20%);
+    }
+  }
+}

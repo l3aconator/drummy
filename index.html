@@ -14,6 +14,9 @@
     
     <link rel="stylesheet" type="text/css" href="css/app.css" />
     
+    <script src="https://use.typekit.net/vmz1oqt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
     <script src="js/function.js"></script>
@@ -21,7 +24,1579 @@
   </head>
   
   <body>
-    <h1>Hello world!</h1>
+    <section class="header-nav">
+      <nav class="container header-nav-container">
+        <div class="row clearfix">
+          <div class="header-logo col col-6of12">
+            <a href="#"><img src="img/logo.svg" alt="Drummy logo" /></a>
+          </div>
+          <div class="col col-6of12">
+            <ul class="header-nav-list">
+              <li class="header-nav-item">
+                <a class="active" href="#">Beats</a>
+              </li>
+              <li class="header-nav-item">
+                <a href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    
+    <section class="beat-machine js-shuffle js-play">
+      <div class="container">
+        
+        <div class="instrument-row snare clearfix">
+          <div class="instrument-box clearfix">
+            <div class="instrument-controls js-not-active">
+              <div class="instrument-on js-instrument-on">
+                <span class="typcn typcn-power"></span>
+              </div>
+              <div class="instrument-off js-instrument-off">
+                <span class="typcn typcn-media-stop"></span>
+              </div>
+            </div>
+            <div class="instrument-icon" >
+              <img class="instrument-icon-img" src="img/snare.svg" alt="An icon of a snare drum" />
+              <span>Snare</span>
+            </div>
+          </div>
+          
+          <div class="pattern-row clearfix">
+              
+              <div class="beat-box beat-1 js-not-active">
+                <div class="waveform-box">
+                  <img class="waveform-img" src="img/snare.svg" alt="" />
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-2 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-3 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-4 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-5 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-6 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-7 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-8 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-9 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-10 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-11 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-12 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-13 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-14 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-15 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-16 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-17 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-18 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-19 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-20 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-21 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-22 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-23 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-24 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-25 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-26 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-27 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-28 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-29 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-30 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-31 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-32 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              
+          </div>
+          
+        </div>
+        
+        <div class="instrument-row cymbal clearfix">
+          <div class="instrument-box clearfix">
+            <div class="instrument-controls js-active">
+              <div class="instrument-on js-instrument-on">
+                <span class="typcn typcn-power"></span>
+              </div>
+              <div class="instrument-off js-instrument-off">
+                <span class="typcn typcn-media-stop"></span>
+              </div>
+            </div>
+            <div class="instrument-icon">
+              <img class="instrument-icon-img" src="img/snare.svg" alt="An icon of a snare drum" />
+              <span>Bass</span>
+            </div>
+          </div>
+          
+          <div class="pattern-row clearfix">
+              
+              <div class="beat-box beat-1 js-not-active">
+                <div class="waveform-box">
+                  <img class="waveform-img" src="img/snare.svg" alt="" />
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-2 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-3 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-4 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-5 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-6 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-7 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-8 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-9 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-10 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-11 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-12 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-13 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-14 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-15 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-16 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-17 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-18 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-19 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-20 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-21 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-22 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-23 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-24 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-25 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-26 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-27 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-28 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-29 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-30 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-31 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-32 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              
+          </div>
+        </div>
+        
+        <div class="instrument-row tom1 clearfix">
+          <div class="instrument-box clearfix">
+            <div class="instrument-controls js-active">
+              <div class="instrument-on js-instrument-on">
+                <span class="typcn typcn-power"></span>
+              </div>
+              <div class="instrument-off js-instrument-off">
+                <span class="typcn typcn-media-stop"></span>
+              </div>
+            </div>
+            <div class="instrument-icon">
+              <img class="instrument-icon-img" src="img/snare.svg" alt="An icon of a snare drum" />
+              <span>Tom</span>
+            </div>
+          </div>
+          
+          <div class="pattern-row clearfix">
+              
+              <div class="beat-box beat-1 js-not-active">
+                <div class="waveform-box">
+                  <img class="waveform-img" src="img/snare.svg" alt="" />
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-2 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-3 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-4 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-5 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-6 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-7 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-8 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-9 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-10 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-11 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-12 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-13 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-14 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-15 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-16 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-17 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-18 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-19 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-20 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-21 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-22 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-23 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-24 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-25 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-26 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-27 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-28 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-29 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-30 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-31 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-32 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="instrument-row tom2 clearfix">
+          <div class="instrument-box clearfix">
+            <div class="instrument-controls js-active">
+              <div class="instrument-on js-instrument-on">
+                <span class="typcn typcn-power"></span>
+              </div>
+              <div class="instrument-off js-instrument-off">
+                <span class="typcn typcn-media-stop"></span>
+              </div>
+            </div>
+            <div class="instrument-icon">
+              <img class="instrument-icon-img" src="img/snare.svg" alt="An icon of a snare drum" />
+              <span>Tom</span>
+            </div>
+          </div>
+          
+          <div class="pattern-row clearfix">
+              
+              <div class="beat-box beat-1 js-not-active">
+                <div class="waveform-box">
+                  <img class="waveform-img" src="img/snare.svg" alt="" />
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-2 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-3 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-4 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-5 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-6 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-7 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-8 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-9 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-10 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-11 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-12 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-13 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-14 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-15 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-16 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-17 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-18 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-19 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-20 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-21 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-22 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-23 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-24 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-25 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-26 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-27 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-28 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-29 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-30 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-31 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-32 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="instrument-row bass clearfix">
+          <div class="instrument-box clearfix">
+            <div class="instrument-controls js-active">
+              <div class="instrument-on js-instrument-on">
+                <span class="typcn typcn-power"></span>
+              </div>
+              <div class="instrument-off js-instrument-off">
+                <span class="typcn typcn-media-stop"></span>
+              </div>
+            </div>
+            <div class="instrument-icon">
+              <img class="instrument-icon-img" src="img/snare.svg" alt="An icon of a snare drum" />
+              <span>Tom</span>
+            </div>
+          </div>
+          
+          <div class="pattern-row clearfix">
+              
+              <div class="beat-box beat-1 js-not-active">
+                <div class="waveform-box">
+                  <img class="waveform-img" src="img/snare.svg" alt="" />
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-2 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-3 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-4 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-5 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-6 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-7 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-8 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-9 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-10 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-11 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-12 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-13 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-14 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-15 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-16 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-17 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-18 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-19 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-20 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-21 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-22 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-23 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-24 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-25 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-26 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-27 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-28 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-29 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-30 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-31 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-32 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="instrument-row hihat clearfix">
+          <div class="instrument-box clearfix">
+            <div class="instrument-controls js-active">
+              <div class="instrument-on js-instrument-on">
+                <span class="typcn typcn-power"></span>
+              </div>
+              <div class="instrument-off js-instrument-off">
+                <span class="typcn typcn-media-stop"></span>
+              </div>
+            </div>
+            <div class="instrument-icon">
+              <img class="instrument-icon-img" src="img/snare.svg" alt="An icon of a snare drum" />
+              <span>Tom</span>
+            </div>
+          </div>
+          
+          <div class="pattern-row clearfix">
+              
+              <div class="beat-box beat-1 js-not-active">
+                <div class="waveform-box">
+                  <img class="waveform-img" src="img/snare.svg" alt="" />
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-2 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-3 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-4 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-5 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-6 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-7 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-8 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-9 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-10 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-11 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-12 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-13 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-14 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-15 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-16 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-17 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-18 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-19 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-20 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-21 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-22 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-23 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-24 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-25 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-26 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-27 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-28 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+            
+              <div class="beat-box beat-29 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-30 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-31 js-not-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+              
+              <div class="beat-box beat-32 js-active">
+                <div class="waveform-box">
+
+                </div>
+                <div class="beat-box-light"></div>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    <footer class="floating-footer">
+      <div class="container floating-footer-container">
+        <div class="row clearfix">
+          <div class="col col-4of12">
+            <a class="typcn typcn-media-play icon-large play-button" href="#">Play pattern</a>
+          </div>
+          <div class="col col-4of12">
+            <label class="selection-label">BPM:</label>
+            <div class="selection-box">
+              <label>
+                <select>
+                  <option selected>80</option>
+                  <option>90</option>
+                  <option>100</option>
+                  <option>110</option>
+                  <option>120</option>
+                  <option>130</option>
+                  <option>140</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="col col-4of12">
+            <label class="selection-label">Select pattern:</label>
+            <div class="selection-box">
+              <label>
+                <select>
+                  <option selected>Shuffle</option>
+                  <option>Swing</option>
+                  <option>EDM</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="container">
+      <h1>Hello world!</h1>
+      <h2>Hello world!</h2>
+      <h3>Hello world!</h3>
+      <h4>Hello world!</h4>
+      <h5>Hello world!</h5>
+      <h6>Hello world!</h6>
+
+      <p>Hello world! <strong>Hello world!</strong> Hello world! Hello world! Hello world! Hello world! Hello world! <a href="#">Hello world!</a> Hello world! <em>Hello world!</em> Hello world!</p>
+      
+      <p class="small">Hello world! <strong>Hello world!</strong> Hello world! Hello world! Hello world! Hello world! Hello world! <a href="#">Hello world!</a> Hello world! <em>Hello world!</em> Hello world!</p>
+      
+      <small>Hello world! <strong>Hello world!</strong> Hello world! Hello world! Hello world! Hello world! Hello world! <a href="#">Hello world!</a> Hello world! <em>Hello world!</em> Hello world!</small>
+      
+      <div class="row clearfix">
+        <div class="col col-6of12">
+          <button class="button inline"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button secondary inline"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button success"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button warning"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button danger"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+        </div>
+        <div class="col col-6of12">
+          <button class="button shadow"><a class="button--link" href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button secondary shadow center"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button success shadow center"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button warning shadow center"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+
+          <button class="button danger shadow center"><a href="https://www.facebook.com" target="_blank">Button Sample</a></button>
+        </div>
+      </div>
+    </div>
+    
   </body>
   
 </html>

@@ -1,0 +1,55 @@
+.floating-footer {
+  background-color: $dark-blue;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: $white;
+  
+  @include reverse-box-shadow;
+  
+  .floating-footer-container {
+    padding: 20px 0;
+    
+    .play-button {
+      color: $white;
+      text-decoration: none;
+      padding-top: 5px;
+      font-weight: $heading-font-weight;
+    }
+    
+    .selection-label {
+      font-weight: $heading-font-weight;
+      margin-right: 10px;
+    }
+    
+    .selection-box {
+      position: relative;
+      display: inline-block;
+      font-weight: $heading-font-weight;
+      color: $dark-blue;
+      
+      label:after {
+        font-family: $base-icon-family;
+        content: '\e01d'; /* '' */
+        color: $dark-blue;
+        position: absolute;
+        right: 15px; 
+        top: 12px;
+        pointer-events: none;
+      }
+      
+      select {
+        color: $dark-blue;
+        background-color: white;
+        border: none;
+        -webkit-appearance: none;
+        appearance: none;
+        padding: 10px 20px;
+        padding-right: 40px;
+        cursor:pointer;
+        display: inline-block;
+      }
+
+    }  
+  }
+}

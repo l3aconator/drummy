@@ -1,0 +1,211 @@
+body {
+  background-color: $light-gray;
+}
+
+//Instrument Row
+.instrument-row {
+  margin-bottom: 10px;
+  overflow-x: scroll;
+  
+  .instrument-box {
+    @include base-instrument-box($dark-blue);
+    float: left;
+  }
+  
+  .instrument-controls {
+    width: $instrument-control-width;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+  }
+  
+  .instrument-on {
+    background-color: $green;
+    width: $instrument-control-width;
+    height: 50%;
+    border-top-left-radius: $base-border-radius;
+    
+    .typcn {
+      &:before {
+        padding-top: 4px;
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .instrument-off {
+    width: $instrument-control-width;
+    height: 50%;
+    border-bottom-left-radius: $base-border-radius;
+  }
+  
+  .instrument-icon {
+    width: 50%;
+    float: left;
+    position: relative;
+    
+    .instrument-icon-img {
+      position: absolute;
+      left: 30%;
+      top: 10%;
+      display: block;
+    }
+    
+    span {
+      display: block;
+      margin-top: 35px;
+      margin-left: 5px;
+      color: $white;
+      font-weight: $base-font-weight;
+      font-size: 12px;
+    }
+  }
+  
+  &.snare {
+    
+    .instrument-box {
+      @include base-instrument-box($dark-blue);
+    }
+    
+    @include instrument-controls($dark-blue);
+    
+    @include beat-box($dark-blue);
+  }
+    
+  
+  &.cymbal {
+    
+    .instrument-box {
+      @include base-instrument-box($purple);
+    }
+    
+    @include instrument-controls($purple);
+    
+    @include beat-box($purple);
+  }
+  
+  &.tom1 {
+    
+    .instrument-box {
+      @include base-instrument-box($blue);
+    }
+    
+    @include instrument-controls($blue);
+    
+    @include beat-box($blue);
+  }
+  
+  &.tom2 {
+    
+    .instrument-box {
+      @include base-instrument-box($orange);
+    }
+    
+    @include instrument-controls($orange);
+    
+    @include beat-box($orange);
+  }
+  
+  &.bass {
+    
+    .instrument-box {
+      @include base-instrument-box($yellow);
+    }
+    
+    @include instrument-controls($yellow);
+    
+    @include beat-box($yellow);
+  }
+  
+  &.hihat {
+    
+    .instrument-box {
+      @include base-instrument-box($pink);
+    }
+    
+    @include instrument-controls($pink);
+    
+    @include beat-box($pink);
+  }
+
+}
+
+.pattern-row {
+  display: flex;
+  float: left;
+  width: 93%;
+  
+  .beat-box {
+    width: $beat-box-dimension;
+    height: $base-box-height;
+    background-color: $dark-blue;
+    margin-right: 5px;
+    border-radius: $base-border-radius;
+    position: relative;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    .waveform-box {
+      background-color: darken($dark-blue, 11%);
+      height: 60%;
+      width: 60%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 5px;
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      cursor: zoom-in;
+      position: relative;
+      
+      .waveform-img {
+        overflow: hidden;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &.beat-1 {
+      margin-left: $measure-break;
+    }
+
+    &.beat-4,
+    &.beat-8,
+    &.beat-12,
+    &.beat-16,
+    &.beat-20,
+    &.beat-24,
+    &.beat-28, {
+      margin-right: $measure-break;
+    }
+    
+    &.js-not-active {
+      .beat-box-light {
+          background-color: $red;
+          box-shadow: 0px 0px 5px 1px #C94141;
+        }
+      }
+      
+      &.js-active {
+        .beat-box-light {
+          background-color: $green;
+          box-shadow: 0px 0px 5px 1px #40C263;
+        }
+      }
+    
+    .beat-box-light {
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      border-radius: 100%;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+  }
+}

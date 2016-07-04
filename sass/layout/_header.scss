@@ -1,0 +1,46 @@
+.header-nav {
+  display: inline;
+  margin: 0;
+}
+
+.header-nav-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-nav-list {
+  float: right;
+  margin: 0;
+  padding: 0;
+  
+  .header-nav-item {
+    list-style-type: none;
+    display: inline;
+    
+    a {
+      text-decoration: none;
+      padding: 10px 20px;
+      color: $dark-blue;
+      font-weight: $heading-font-weight;
+      font-size: $base-font-size;
+      
+      @include default-button-transition;
+      
+      &:hover {
+        color: lighten($dark-blue, 15%);
+      }
+      
+      &.active {
+        color: lighten($dark-blue, 15%);
+      }
+    }
+    
+    
+    &:last-child {
+      a {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}

@@ -58,114 +58,177 @@ $(document).ready(function() {
             cymbal.play();
         }, true);
   
-      function beat() {
-        var snareSpeed = 425;
-        var baseSpeed = 400;
-
-        $('.snare .beat-1').removeClass('js-not-active');
-        $('.snare .beat-1').addClass('js-active');
-        audioElement.play();
+      function baseBeat() {
+        var snareSpeed = 600;
+        var bassSpeed = 400;
+        var cymbalSpeed = 525;
         
-        // Snare
-        setTimeout(function () {
-          $('.snare .beat-1').removeClass('js-active');
-          $('.snare .beat-1').addClass('js-not-active');
-          $('.snare .beat-2').addClass('js-active');
-        }, snareSpeed);
+        // Cymbal 1
+        $('.cymbal .beat-16').removeClass('js-active');
+        $('.cymbal .beat-16').addClass('js-not-active');
+        $('.cymbal .beat-1').removeClass('js-not-active');
+        $('.cymbal .beat-1').addClass('js-active');
+        cymbal.play();
         
-        // Cymbal
+        // Cymbal 1-and
         setTimeout(function () {
           $('.cymbal .beat-1').removeClass('js-active');
           $('.cymbal .beat-1').addClass('js-not-active');
           $('.cymbal .beat-2').addClass('js-active');
           cymbal.play();
-        }, snareSpeed);
-
+        }, cymbalSpeed);
+        
+        // Cymbal 2
         setTimeout(function () {
-          $('.snare .beat-2').removeClass('js-active');
-          $('.snare .beat-2').addClass('js-not-active');
+          $('.cymbal .beat-2').removeClass('js-active');
+          $('.cymbal .beat-2').addClass('js-not-active');
+          $('.cymbal .beat-3').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 2);
+
+        // Snare 2
+        setTimeout(function () {
+          $('.snare .beat-15').removeClass('js-active');
+          $('.snare .beat-15').addClass('js-not-active');
+          $('.snare .beat-3').removeClass('js-not-active');
           $('.snare .beat-3').addClass('js-active');
           audioElement.play();
         }, snareSpeed * 2);
+        
+        // Cymbal 2 and
+        setTimeout(function () {
+          $('.cymbal .beat-3').removeClass('js-active');
+          $('.cymbal .beat-3').addClass('js-not-active');
+          $('.cymbal .beat-4').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 3);
+        
+        // Cymbal 3
+        setTimeout(function () {
+          $('.cymbal .beat-4').removeClass('js-active');
+          $('.cymbal .beat-4').addClass('js-not-active');
+          $('.cymbal .beat-5').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 4);
+        
+        // Cymbal 3 and
+        setTimeout(function () {
+          $('.cymbal .beat-5').removeClass('js-active');
+          $('.cymbal .beat-5').addClass('js-not-active');
+          $('.cymbal .beat-6').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 5);
 
+        // Snare beat 4
         setTimeout(function () {
           $('.snare .beat-3').removeClass('js-active');
           $('.snare .beat-3').addClass('js-not-active');
-          $('.snare .beat-4').addClass('js-active');
-          audioElement.play();
-        }, snareSpeed * 3);
-
-        setTimeout(function () {
-          $('.snare .beat-4').removeClass('js-active');
-          $('.snare .beat-4').addClass('js-not-active');
-          $('.snare .beat-5').addClass('js-active');
-          audioElement.play();
-        }, snareSpeed * 4);
-
-        setTimeout(function () {
-          $('.snare .beat-5').removeClass('js-active');
-          $('.snare .beat-5').addClass('js-not-active');
-          $('.snare .beat-6').addClass('js-active');
-          audioElement.play();
-        }, snareSpeed * 5);
-
-        setTimeout(function () {
-          $('.snare .beat-6').removeClass('js-active');
-          $('.snare .beat-6').addClass('js-not-active');
           $('.snare .beat-7').addClass('js-active');
           audioElement.play();
         }, snareSpeed * 6);
 
         setTimeout(function () {
+          $('.cymbal .beat-6').removeClass('js-active');
+          $('.cymbal .beat-6').addClass('js-not-active');
+          $('.cymbal .beat-7').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 6);
+
+        setTimeout(function () {
+          $('.cymbal .beat-7').removeClass('js-active');
+          $('.cymbal .beat-7').addClass('js-not-active');
+          $('.cymbal .beat-8').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 7);
+        
+        setTimeout(function () {
+          $('.cymbal .beat-8').removeClass('js-active');
+          $('.cymbal .beat-8').addClass('js-not-active');
+          $('.cymbal .beat-9').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 8);
+        
+        setTimeout(function () {
+          $('.cymbal .beat-9').removeClass('js-active');
+          $('.cymbal .beat-9').addClass('js-not-active');
+          $('.cymbal .beat-10').addClass('js-active');
+          cymbal.play()
+        }, cymbalSpeed * 9);
+        
+         setTimeout(function () {
+          $('.cymbal .beat-10').removeClass('js-active');
+          $('.cymbal .beat-10').addClass('js-not-active');
+          $('.cymbal .beat-11').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 10);
+        
+        // Snare beat 6
+        setTimeout(function () {
           $('.snare .beat-7').removeClass('js-active');
           $('.snare .beat-7').addClass('js-not-active');
-          $('.snare .beat-8').addClass('js-active');
-          audioElement.play();
-        }, snareSpeed * 7);
-
-        setTimeout(function () {
-          $('.snare .beat-8').removeClass('js-active');
-          $('.snare .beat-8').addClass('js-not-active');
-          $('.snare .beat-9').addClass('js-active');
-          audioElement.play();
-        }, snareSpeed * 8);
-
-        setTimeout(function () {
-          $('.snare .beat-9').removeClass('js-active');
-          $('.snare .beat-9').addClass('js-not-active');
-          $('.snare .beat-10').addClass('js-active');
-          audioElement.play();
-        }, snareSpeed * 9);
-
-        setTimeout(function () {
-          $('.snare .beat-10').removeClass('js-active');
-          $('.snare .beat-10').addClass('js-not-active');
           $('.snare .beat-11').addClass('js-active');
           audioElement.play();
         }, snareSpeed * 10);
+        
+        // Cymbal
+        setTimeout(function () {
+          $('.cymbal .beat-10').removeClass('js-active');
+          $('.cymbal .beat-10').addClass('js-not-active');
+          $('.cymbal .beat-11').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 10);
 
+        setTimeout(function () {
+          $('.cymbal .beat-11').removeClass('js-active');
+          $('.cymbal .beat-11').addClass('js-not-active');
+          $('.cymbal .beat-12').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 11);
+        
+        setTimeout(function () {
+          $('.cymbal .beat-12').removeClass('js-active');
+          $('.cymbal .beat-12').addClass('js-not-active');
+          $('.cymbal .beat-13').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 12);
+        
+        setTimeout(function () {
+          $('.cymbal .beat-13').removeClass('js-active');
+          $('.cymbal .beat-13').addClass('js-not-active');
+          $('.cymbal .beat-14').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 13);
+        
+        // Snare End
         setTimeout(function () {
           $('.snare .beat-11').removeClass('js-active');
           $('.snare .beat-11').addClass('js-not-active');
-          $('.snare .beat-12').addClass('js-active');
+          $('.snare .beat-15').removeClass('js-not-active');
+          $('.snare .beat-15').addClass('js-active');
           audioElement.play();
-        }, snareSpeed * 11);
-
-        setTimeout(function () {
-          $('.snare .beat-12').removeClass('js-active');
-          $('.snare .beat-12').addClass('js-not-active');
-          $('.snare .beat-12').delay(400).removeClass('js-active');
-          $('.snare .beat-12').delay(400).addClass('js-not-active');
-          audioElement.play();
-        }, snareSpeed * 12);
+        }, snareSpeed * 14);
         
-        x = setTimeout(function(){beat()}, snareSpeed * 12);
+        setTimeout(function () {
+          $('.cymbal .beat-14').removeClass('js-active');
+          $('.cymbal .beat-14').addClass('js-not-active');
+          $('.cymbal .beat-15').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 14);
+        
+        setTimeout(function () {
+          $('.cymbal .beat-15').removeClass('js-active');
+          $('.cymbal .beat-15').addClass('js-not-active');
+          $('.cymbal .beat-16').addClass('js-active');
+          cymbal.play();
+        }, cymbalSpeed * 15);
+        
+        x = setTimeout(function(){baseBeat()}, snareSpeed * 16);
 
         console.log("click");
       }
   
       $('#js-start').on('click', function() {
-        beat();
+        baseBeat();
       });
   
     

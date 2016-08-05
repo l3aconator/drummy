@@ -2098,14 +2098,14 @@ body {
         transform: translateY(-50%); }
     .pattern-row .beat-box.beat-1 {
       margin-left: 10px; }
-    .pattern-row .beat-box.beat-4, .pattern-row .beat-box.beat-8, .pattern-row .beat-box.beat-12, .pattern-row .beat-box.beat-16, .pattern-row .beat-box.beat-20, .pattern-row .beat-box.beat-24, .pattern-row .beat-box.beat-28 {
+    .pattern-row .beat-box.beat-4-and, .pattern-row .beat-box.beat-8-and, .pattern-row .beat-box.beat-12-and, .pattern-row .beat-box.beat-16-and, .pattern-row .beat-box.beat-20-and, .pattern-row .beat-box.beat-24-and, .pattern-row .beat-box.beat-28-and {
       margin-right: 10px; }
-    .pattern-row .beat-box.js-not-active .beat-box-light {
-      background-color: #FF5454;
-      box-shadow: 0px 0px 5px 1px #C94141; }
     .pattern-row .beat-box.js-active .beat-box-light {
       background-color: #4EED79;
       box-shadow: 0px 0px 5px 1px #40C263; }
+    .pattern-row .beat-box .beat-box-light {
+      background-color: #FF5454;
+      box-shadow: 0px 0px 5px 1px #C94141; }
     .pattern-row .beat-box .beat-box-light {
       width: 8px;
       height: 8px;

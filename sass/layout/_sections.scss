@@ -173,22 +173,15 @@ body {
       margin-left: $measure-break;
     }
 
-    &.beat-4,
-    &.beat-8,
-    &.beat-12,
-    &.beat-16,
-    &.beat-20,
-    &.beat-24,
-    &.beat-28, {
+    &.beat-4-and,
+    &.beat-8-and,
+    &.beat-12-and,
+    &.beat-16-and,
+    &.beat-20-and,
+    &.beat-24-and,
+    &.beat-28-and, {
       margin-right: $measure-break;
     }
-    
-    &.js-not-active {
-      .beat-box-light {
-          background-color: $red;
-          box-shadow: 0px 0px 5px 1px #C94141;
-        }
-      }
       
       &.js-active {
         .beat-box-light {
@@ -196,6 +189,11 @@ body {
           box-shadow: 0px 0px 5px 1px #40C263;
         }
       }
+    
+    .beat-box-light {
+      background-color: $red;
+      box-shadow: 0px 0px 5px 1px #C94141;
+    }
     
     .beat-box-light {
       width: 8px;
